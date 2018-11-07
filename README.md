@@ -38,3 +38,4 @@ year = {2019}
 # Contact 
 * Yang Li, liyang89@zju.edu.cn, http://ihpdep.github.io
 * Jianke Zhu, jkzhu@zju.edu.cn, http://jkzhu.github.io
+* Steven C.H. Hoi, chhoi@smu.edu.sg, http://stevenhoi.org
