@@ -1,6 +1,7 @@
 
 close all;
-
+%~/Data/tob100
+%~/Data/tb100/
 datasets={ struct('name','OTB-100','basePath','videos/')};
     
 %default settings for demo

@@ -2,6 +2,7 @@ function [ p,pos,target_sz ] = init( video_path, img_files, pos, target_sz, rot,
 %INIT Summary of this function goes here
 %   Detailed explanation goes here
     addpath('./utility');
+    addpath('./utility/mexfiles');
     %% settings for correlation filter
     kernel_type = 'linear'; 
 	kernel.type = kernel_type;
