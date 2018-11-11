@@ -25,13 +25,13 @@ mexFunction(int nlhs, mxArray *plhs[],
     
     
     // determine input/output image properties!mxIsDouble(prhs[0]) ||
-    const int *dimsA    = mxGetDimensions(prhs[0]);
+    const mwSize *dimsA    = mxGetDimensions(prhs[0]);
     const int nDimsA    = mxGetNumberOfDimensions(prhs[0]);
     const int rowsA     = dimsA[0];
     const int colsA     = dimsA[1];
     const int channelsA = (nDimsA == 3 ? dimsA[2] : 1);
     
-    const int *dimsB    = mxGetDimensions(prhs[1]);
+    const mwSize *dimsB    = mxGetDimensions(prhs[1]);
     const int nDimsB    = mxGetNumberOfDimensions(prhs[1]);
     const int rowsB     = dimsB[0];
     const int colsB     = dimsB[1];

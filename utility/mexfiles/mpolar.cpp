@@ -25,7 +25,7 @@ mexFunction(int nlhs, mxArray *plhs[],
     
     
     // determine input/output image properties
-    const int *dimsA    = mxGetDimensions(prhs[0]);
+    const mwSize *dimsA    = mxGetDimensions(prhs[0]);
     const int nDimsA    = mxGetNumberOfDimensions(prhs[0]);
     const int rowsA     = dimsA[0];
     const int colsA     = dimsA[1];

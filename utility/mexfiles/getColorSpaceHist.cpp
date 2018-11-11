@@ -27,7 +27,7 @@ mexFunction(int nlhs, mxArray *plhs[],
     
     
     // determine input/output image properties!mxIsDouble(prhs[0]) ||
-    const int *dimsA    = mxGetDimensions(prhs[0]);
+    const mwSize *dimsA    = mxGetDimensions(prhs[0]);
     const int nDimsA    = mxGetNumberOfDimensions(prhs[0]);
     const int rowsA     = dimsA[0];
     const int colsA     = dimsA[1];
@@ -37,7 +37,7 @@ mexFunction(int nlhs, mxArray *plhs[],
 
     unsigned char *IM = (unsigned char*)mxGetData(prhs[0]);
     int bin = (int)mxGetScalar(prhs[1]);
-    int ndim[3];
+    mwSize ndim[3];
     ndim[0] = bin;ndim[1] = bin;ndim[2] = bin;
     plhs[0] = mxCreateNumericArray(3, ndim, mxDOUBLE_CLASS,mxREAL);
     double *output = mxGetPr(plhs[0]);
