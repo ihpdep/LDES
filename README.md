@@ -1,6 +1,6 @@
 # Robust Estimation of Similarity Transformation for Visual Object Tracking
 
-This is our implementation of the Large Displacement Estimation of Similarity transformation (LDES) tracker. The main idea is to extend the CF-based tracker with similarity transformation (including position, scale, and rotation) in an efficient way. It can be used as a scale estimator with only sampling once in each frame. The code should be easy to follow and reuse. The details can be found in our AAAI-2019 paper.
+This is our implementation of the Large Displacement Estimation of Similarity transformation (LDES) tracker. The main idea is to extend the CF-based tracker with similarity transformation (including position, scale, and rotation) in an efficient way. It can be used as a scale estimator with only sampling once in each frame. The code should be easy to follow and reuse. The details can be found in our [AAAI-2019 paper](https://arxiv.org/abs/1712.05231).
 
 Please cite our publication if you use the code
 ```
@@ -29,6 +29,8 @@ year = {2019}
 * Run "run_pot.m" script in MATLAB.
 * Use the result files in POT code to get benchmark results.
 
+# Troubleshooting
+If it does not run directly, probably you need to compile the mex files by yourself. Please check the compile.m in ./utility/mexfiles and change the opencv path for your settings. We tested it with opencv 2.4.
 
 # Example
 ![tracking-example][logo]
