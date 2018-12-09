@@ -51,9 +51,9 @@ frame = 1;
 
 im = imread(image);
 
-if p.resize_image,
-    im = imresize(im, 0.5);
-end
+%if p.resize_image,
+%    im = imresize(im, 0.5);
+%end
 interp_n = 0.85;
 p = logupdate(1,im, pos, tmp_sc,tmp_rot,p);
 
@@ -88,7 +88,7 @@ while true
 	            break;
 	        end
         	[pos,tmp_sc,tmp_rot,cscore,sscore] = tracking(im,pos,p,iter);
-            cscore = (1-interp_n)*cscore + interp_n*sscore;
+          	cscore = (1-p.interp_n)*cscore + p.interp_n*sscore;
         	iter = iter +1;
     	end
     	pos = mpos;
