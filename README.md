@@ -30,7 +30,7 @@ year = {2019}
 * Use the result files in POT code to get benchmark results.
 
 # Troubleshooting
-If it does not run directly, probably you need to compile the mex files by yourself. Please check the compile.m in ./utility/mexfiles and change the opencv path for your settings. We tested it with opencv 2.4.
+If it does not run directly, probably you need to compile the mex files by yourself. Please check the compile.m in ./utility/mexfiles and change the opencv path for your settings. We tested it with opencv 2.4 and 3.4
 
 # Example
 ![tracking-example][logo]
