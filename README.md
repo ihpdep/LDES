@@ -32,6 +32,8 @@ year = {2019}
 # Troubleshooting
 If it does not run directly, probably you need to compile the mex files by yourself. Please check the compile.m in ./utility/mexfiles and change the opencv path for your settings. We tested it with opencv 2.4 and 3.4
 
+The most important thing is make sure your OpenCV is working with your MatLab. Try some simple tutorial online if you have some issue with compiling/running.
+
 # Example
 ![tracking-example][logo]
 
