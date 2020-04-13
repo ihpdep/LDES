@@ -29,7 +29,7 @@ function [ p,pos,target_sz ] = init( video_path, img_files, pos, target_sz, rot,
     % to tun off/on rotation estimation
     p.isRotation=1;
     % to tun off/on Block Gradiant Descent
-    p.isBGD=p.isRotation;
+    p.isBGD=1;
     p.isSubpixel = 1;
     % coefficient for equation 3
     p.interp_n = 0.85;
